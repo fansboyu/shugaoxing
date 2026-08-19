@@ -1,0 +1,50 @@
+/* 统一页面宽度：桌面端充分利用视口，移动端保留可阅读的边距。 */
+:root { --site-gutter: clamp(24px, 3vw, 72px); }
+
+.container {
+  width: calc(100% - var(--site-gutter) * 2);
+  max-width: none;
+}
+
+/* 在不改变版式层级的前提下，统一提升页面可读性。 */
+body { font-size: 20px; }
+.top-line { font-size: 15px; }
+.main-nav { font-size: 17px; }
+.hero-tag, .section-tag { font-size: 16px; }
+.hero-copy > p:not(.hero-tag) { max-width: 720px; font-size: 23px; line-height: 1.8; }
+.feature-grid h3 { font-size: 22px; }
+.feature-grid p { font-size: 17px; line-height: 1.75; }
+.about-copy > p:not(.section-tag), .method-copy > p:not(.section-tag) { font-size: 20px; line-height: 1.85; }
+.check-list { font-size: 19px; line-height: 1.8; }
+.service-grid h3 { font-size: 24px; }
+.service-grid p { font-size: 18px; line-height: 1.8; }
+.service-grid a, .article-grid article > a { font-size: 17px; }
+.method-steps h3 { font-size: 23px; }
+.method-steps p { font-size: 18px; line-height: 1.75; }
+.article-grid time { font-size: 15px; }
+.article-grid h3 { font-size: 25px; }
+.article-grid p { font-size: 18px; line-height: 1.8; }
+.cta-section p { font-size: 19px; }
+.cta-section h2 { font-size: 44px; }
+.site-footer p { font-size: 17px; }
+.site-footer a:not(.brand) { font-size: 20px; }
+
+@media (max-width: 900px) {
+  :root { --site-gutter: 24px; }
+}
+
+@media (max-width: 570px) {
+  :root { --site-gutter: 15px; }
+
+  body { font-size: 17px; }
+  .hero-copy > p:not(.hero-tag) { font-size: 18px; }
+  .about-copy > p:not(.section-tag), .method-copy > p:not(.section-tag) { font-size: 17px; }
+  .feature-grid h3, .service-grid h3 { font-size: 20px; }
+  .feature-grid p, .service-grid p, .method-steps p, .article-grid p { font-size: 15px; }
+  .article-grid h3 { font-size: 21px; }
+  .cta-section h2 { font-size: 32px; }
+
+  .container {
+    width: calc(100% - var(--site-gutter) * 2);
+  }
+}
