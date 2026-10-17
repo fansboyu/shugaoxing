@@ -4,3 +4,5 @@ braintox-cn/
 # 系统与编辑器文件
 .DS_Store
 Thumbs.db
+.preview/
+*.zip

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <title>{{seo_title}}｜数告星</title>
+  <title>{{seo_title}}</title>
   <meta name="description" content="{{seo_description}}">
   <meta name="keywords" content="{{seo_keywords}}">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -62,17 +62,17 @@
 </head>
 <body class="article-page">
   <div class="site-loader" aria-hidden="true"><span class="loader-orbit"></span><b>SG</b></div>
-  <div class="top-line"><div class="container"><span>上海数告星网络科技有限公司 · 数字增长服务商</span><a href="tel:18621265069">咨询热线：186 2126 5069</a></div></div>
+  <div class="top-line"><div class="container"><span>上海数告星网络科技有限公司 · 数字增长服务商</span><a href="{{contact_phone_url}}">咨询热线：{{contact_phone}}</a></div></div>
   <header class="site-header">
-    <div class="container nav-wrap"><a class="brand" href="{{home_url}}" aria-label="数告星首页"><span class="brand-mark">SG</span><span>数告星<small>SHUGAOXING DIGITAL</small></span></a><button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">菜单</button><nav class="main-nav" aria-label="主导航"><a href="{{home_url}}">首页</a><a href="{{home_url}}#about">关于我们</a><a href="{{home_url}}#services">服务内容</a><a class="active" href="{{news_index_url}}">行业洞察</a><a href="{{home_url}}#contact">联系我们</a></nav><a class="theme-btn nav-button" href="tel:18621265069">获取方案 <span>→</span></a></div>
+    <div class="container nav-wrap"><a class="brand" href="{{home_url}}" aria-label="数告星首页"><span class="brand-mark">SG</span><span>数告星<small>SHUGAOXING DIGITAL</small></span></a><button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">菜单</button><nav class="main-nav" aria-label="主导航"><a href="{{home_url}}">首页</a><a href="{{home_url}}#about">关于我们</a><a href="{{home_url}}#services">服务内容</a><a class="active" href="{{news_index_url}}">行业洞察</a><a href="{{home_url}}#contact">联系我们</a></nav><a class="theme-btn nav-button" href="{{contact_phone_url}}">获取方案 <span>→</span></a></div>
   </header>
   <main>
-    <section class="article-hero"><div class="container article-hero-inner"><nav class="article-crumb" aria-label="面包屑"><a href="{{home_url}}">首页</a><span>/</span><a href="{{news_index_url}}">行业洞察</a><span>/</span><span>{{category_name}}</span></nav><p class="article-meta">{{category_name}} · <time datetime="{{published_at_iso}}">{{published_at}}</time></p><h1>{{title}}</h1><p class="article-summary">{{summary}}</p>{{cover_image_block}}</div></section>
-    <section class="container article-shell"><article class="article-content" data-article-id="{{article_id}}">{{content_html}}</article><aside class="article-side"><b>需要增长方案？</b><p>围绕官网内容、AI 搜索可见性与推广落地页，数告星为企业提供可持续的数字增长支持。</p><a class="theme-btn" href="tel:18621265069">咨询数告星 <span>→</span></a></aside></section>
+    <section class="article-hero"><div class="container article-hero-inner"><nav class="article-crumb" aria-label="面包屑"><a href="{{home_url}}">首页</a><span>/</span><a href="{{news_index_url}}">行业洞察</a><span>/</span><span>行业洞察</span></nav><p class="article-meta">行业洞察 · <time datetime="{{published_at_iso}}">{{published_at}}</time></p><h1>{{title}}</h1><p class="article-summary">{{summary}}</p>{{cover_image_block}}</div></section>
+    <section class="container article-shell"><article class="article-content" data-article-id="{{article_id}}">{{content_html}}</article><aside class="article-side"><b>需要增长方案？</b><p>围绕官网内容、AI 搜索可见性与推广落地页，数告星为企业提供可持续的数字增长支持。</p><a class="theme-btn" href="{{contact_phone_url}}">咨询数告星 <span>→</span></a></aside></section>
     <section class="container"><footer class="article-footer"><p class="article-tags"><strong>文章标签：</strong>{{tag_links}}</p><a class="theme-btn" href="{{home_url}}#contact">获取增长方案 <span>→</span></a></footer></section>
     <section class="related-section"><div class="container"><div class="related-heading"><div><p class="section-tag">MORE INSIGHTS</p><h2>继续阅读</h2></div><a class="outline-link" href="{{news_index_url}}">查看全部文章 →</a></div><div class="article-grid">{{related_articles}}</div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-layout"><div><a class="brand" href="{{home_url}}"><span class="brand-mark">SG</span><span>数告星<small>SHUGAOXING DIGITAL</small></span></a><p>GEO 推广 · 广告投流 · 广告推广 · 技术开发</p></div><div><p>上海数告星网络科技有限公司</p><a href="tel:18621265069">186 2126 5069</a><p>联系人：蒋斌</p></div><p class="copyright">© <span id="year"></span> 数告星网络科技有限公司</p></div></footer>
+  <footer class="site-footer"><div class="container footer-layout"><div><a class="brand" href="{{home_url}}"><span class="brand-mark">SG</span><span>数告星<small>SHUGAOXING DIGITAL</small></span></a><p>GEO 推广 · 广告投流 · 广告推广 · 技术开发</p></div><div><p>上海数告星网络科技有限公司</p><a href="{{contact_phone_url}}">{{contact_phone}}</a><p>联系人：蒋斌</p></div><p class="copyright">© <span id="year"></span> 数告星网络科技有限公司</p></div><div class="container" style="padding-bottom:24px;text-align:center;font-size:14px"><a href="{{icp_url}}" target="_blank" rel="noopener noreferrer">{{icp_number}}</a></div></footer>
   <script src="{{asset_prefix}}site.js"></script>
 </body>
 </html>
